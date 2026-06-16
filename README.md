@@ -71,7 +71,7 @@ El proyecto está desplegado en: **[https://github.com/EnriqueCC10/spotify-clone
 
 ## 📹 Presentación
 
-Video explicativo (teoría + demo): **[LINK DE YOUTUBE]**
+Video explicativo (teoría + demo): **[https://youtu.be/qJP6s2EpVSY]**
 
 ## 👤 Autor
 
