@@ -1,0 +1,148 @@
+.sidebar {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 8px;
+  height: 100%;
+  min-height: 0;
+}
+
+/* ---- Bloque superior ---- */
+.sidebar__top {
+  background-color: var(--color-base);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 22px;
+  padding: 10px 8px 16px;
+}
+
+.sidebar__nav {
+  list-style: none;
+}
+
+.sidebar__navItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 8px;
+  color: var(--color-subtext);
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sidebar__navItem:hover {
+  color: var(--color-text);
+}
+
+.sidebar__navItem--active {
+  color: var(--color-text);
+}
+
+/* ---- Biblioteca ---- */
+.sidebar__library {
+  background-color: var(--color-base);
+  border-radius: 8px;
+  padding: 8px 4px 8px 12px;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.sidebar__libraryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 12px 0;
+}
+
+.sidebar__libraryTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-subtext);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.sidebar__addBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--color-subtext);
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar__addBtn:hover {
+  background-color: var(--color-elevated-hover);
+  color: var(--color-text);
+}
+
+.sidebar__playlists {
+  list-style: none;
+}
+
+.sidebar__playlist {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar__playlist:hover {
+  background-color: var(--color-elevated-hover);
+}
+
+.sidebar__cover {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.sidebar__likedCover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  color: #fff;
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+}
+
+.sidebar__playlistInfo {
+  min-width: 0;
+}
+
+.sidebar__playlistName {
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar__playlistMeta {
+  color: var(--color-subtext);
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

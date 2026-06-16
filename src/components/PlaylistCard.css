@@ -1,0 +1,69 @@
+.card {
+  background-color: var(--color-elevated);
+  padding: 16px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: var(--color-elevated-hover);
+}
+
+.card__coverWrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.card__cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón verde de play que aparece al pasar el mouse */
+.card__play {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-green);
+  color: #000;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s, transform 0.3s, background 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover .card__play {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card__play:hover {
+  background-color: var(--color-green-hover);
+  transform: scale(1.05);
+}
+
+.card__title {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__subtitle {
+  color: var(--color-subtext);
+  font-size: 14px;
+  line-height: 1.4;
+}
