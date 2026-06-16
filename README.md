@@ -67,7 +67,7 @@ npm run preview   # previsualiza el build
 
 ## 🌐 Deploy
 
-El proyecto está desplegado en: **[LINK]**
+El proyecto está desplegado en: **[https://github.com/EnriqueCC10/spotify-clone]**
 
 ## 📹 Presentación
 
